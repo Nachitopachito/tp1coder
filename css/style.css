@@ -87,11 +87,15 @@ main section img {
     object-fit: cover;
 }
 
+/* media querys */
+
 @media screen and (min-width: 600px) {
     main section {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 100%;
-
+    }
+    video {
+        width: 100%;
     }
 
 }
@@ -101,6 +105,8 @@ main section img {
         grid-template-columns: repeat(3);
         grid-template-rows: 100%;
     }
+    
+    video {width: auto;}
 }
 
 
