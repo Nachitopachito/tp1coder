@@ -1,0 +1,12 @@
+@media screen and (min-width: 320px) {
+    main section {
+        grid-template-columns: repeat(3);
+        grid-template-rows: 100%;
+      }
+
+    video{
+        width: 100%;
+    }
+
+}
+ 

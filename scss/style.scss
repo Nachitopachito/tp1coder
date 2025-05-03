@@ -1,0 +1,10 @@
+//reset 
+
+@import "base/reset";
+@import "pages/home";
+//celu
+@import "pages/mq-celu.scss";
+//tablet
+@import "pages/mq-tablet";
+//desktop
+@import "pages/mq-desktop"

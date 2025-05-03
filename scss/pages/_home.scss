@@ -1,0 +1,80 @@
+// mixin
+@import "../abstracts/mixin";
+
+@import "../abstracts/variables";
+
+
+
+
+//estilos header
+
+header img{width: 20%;}
+
+header{
+    text-align: center;
+    nav{
+        ul{
+            list-style: none;
+            font-size: 2rem;
+           a{
+            color: $color-tercero;
+            text-decoration: none;
+            font-weight: bold;
+           } 
+        }
+    }
+}
+
+// estilos main
+
+
+// flex
+.img-container img {
+    margin: 10px;
+}
+
+main .video {text-align: center;}
+
+main .img-container{
+            @include flex
+        }
+
+main .img-flyer{
+    @include grid (grid,repeat (3, 1fr), repeat(0));
+    padding: 1rem;
+    justify-content: center;
+    
+}
+ 
+main div img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+main {
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+
+h1{ color:$color-tipografia;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+h2{color:$color-tipografia;
+    font-size: 30px;
+    text-align: center;
+
+}
+p {color:$color-tercero;
+    text-align: center;
+}
+
+footer {text-align: center;
+        color: $color-tercero;
+}
