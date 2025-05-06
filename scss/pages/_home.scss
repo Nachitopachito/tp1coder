@@ -86,14 +86,14 @@ main .img-flyer{
 }
  
 .home-dinamico {
-    padding: 2rem;
+    padding: 1rem;
   
     section {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
       gap: 2rem;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
   
       .texto {
         h1, h2 {
@@ -149,6 +149,7 @@ p {color:$color-tercero;
 
 footer {text-align: center;
         color: $color-tercero;
+        margin-top: 0;
 }
 
 .social-btn {
