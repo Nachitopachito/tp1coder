@@ -30,10 +30,6 @@ header img {
   margin: 0 auto;
 }
 
-
-
-
-
 .navbar-brand img {
     transition: transform 0.3s ease, filter 0.3s ease;
   }
@@ -44,12 +40,6 @@ header img {
   }
   
 
-// estilos main
-
-// flex
-.img-container img {
-    margin: 10px;
-}
 
 .video-container {
     position: relative;
@@ -96,9 +86,6 @@ header img {
   }
   
 
-main .img-container{
-            @include flex
-        }
 
 main .img-flyer{
     @include grid (grid,repeat (3, 1fr), none);
@@ -144,8 +131,60 @@ main .img-flyer{
   
 
 
+  // flex
+.video-flex {
+  @include flex;
+  gap: 2rem;
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &.alt {
+    background-color: #363435;
+  }
+
+}
+
+.video-texto {
+  flex: 1;
+  min-width: 280px;
+
+  h2 {
+    font-size: 2rem;
+    color: $color-tipografia;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $color-tercero;
+    text-align: center;
+  }
+}
+
+.video-wrapper {
+  flex: 1;
+  min-width: 300px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
 
 main {
+  
     img{
         max-width: 100%;
         max-height: 100%;
