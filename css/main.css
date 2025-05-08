@@ -93,6 +93,16 @@ main .img-flyer {
 .home-dinamico {
   padding: 1rem;
 }
+.home-dinamico .spotify-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-dinamico .spotify-section iframe {
+  width: 60%;
+  height: 200px;
+  max-width: 600px;
+}
 .home-dinamico section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -249,6 +259,11 @@ footer {
     font-size: 1rem;
   }
 }
+.spotify-section iframe {
+  width: 90% !important;
+  height: 152px !important;
+}
+
 video {
   width: 100%;
 }

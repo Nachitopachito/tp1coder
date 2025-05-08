@@ -101,6 +101,19 @@ main .img-flyer{
 .home-dinamico {
     padding: 1rem;
   
+    .spotify-section {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    
+      iframe {
+        width: 60%;
+        height: 200px; 
+        max-width: 600px;
+      
+      }
+    }
+    
     section {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -185,7 +198,6 @@ main .img-flyer{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 }
-
 
 h1{ 
     color:$color-tipografia;
