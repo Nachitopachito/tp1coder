@@ -76,7 +76,7 @@ header img {
   // grid
   main {
     .galeria {
-      @include grid(repeat(auto-fit (250px, 1fr)));
+      @include grid(repeat(auto-fit, none (250px, 1fr)));
   
       padding: 2rem;
   
