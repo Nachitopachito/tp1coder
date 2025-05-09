@@ -67,7 +67,7 @@ header img {
 
 main .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, none 250px, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax 250px, 1fr);
   grid-template-rows: auto;
   gap: 1rem;
   justify-items: center;
@@ -87,7 +87,7 @@ main .galeria img:hover {
 
 main .img-flyer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
   gap: 1rem;
   justify-items: center;
