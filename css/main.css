@@ -67,10 +67,11 @@ header img {
 
 main .galeria {
   display: grid;
-  grid-template-columns: repeat(auto, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit 250px, 1fr);
+  grid-template-rows: auto;
   gap: 1rem;
-  padding: 2rem;
   justify-items: center;
+  padding: 2rem;
 }
 main .galeria img {
   width: 80%;
@@ -86,11 +87,17 @@ main .galeria img:hover {
 
 main .img-flyer {
   display: grid;
-  grid-template-columns: repeat 3, 1fr;
-  grid-template-rows: none;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
   gap: 1rem;
+  justify-items: center;
   padding: 1rem;
   justify-content: center;
+}
+main .img-flyer img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .home-dinamico {
